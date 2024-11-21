@@ -2,7 +2,7 @@
   "name": "rename-markdown-heading",
   "displayName": "Rename Markdown Heading",
   "description": "Renames a Markdown heading and updates its references in the file.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "LWilhelmer",
   "repository": "https://github.com/wilhelmer/rename-markdown-heading",
   "engines": {
@@ -19,7 +19,16 @@
         "command": "rename-markdown-heading.renameMarkdownHeading",
         "title": "Rename Markdown heading"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "rename-markdown-heading.renameMarkdownHeading",
+          "when": "editorLangId == markdown",
+          "group": "1_modification"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "tsc -p ./"

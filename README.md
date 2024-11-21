@@ -4,10 +4,11 @@ This Visual Studio Code extension allows you to rename a Markdown heading and au
 
 ## Usage
 
+![VS Code Screenshot](context-menu.png)
+
 1. Open a Markdown file in Visual Studio Code.
-2. Place your cursor on a line containing a Markdown heading (e.g., `# My Heading`).
-3. Run the `Rename Markdown heading` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
-4. Enter the new name for the heading.
+2. Right-click a Markdown heading and select **Rename Markdown heading**. Alternatively, run the `Rename Markdown heading` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+3. Enter the new name for the heading.
 
 The heading is renamed, and all references to it (e.g., `[link text](#old-heading)`) are updated.
 
